@@ -1,0 +1,394 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Hackathon</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500&family=Roboto:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light custom-bg">
+        <div class="container-fluid">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    ☰
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="perfil.html">Perfil</a></li>
+                  <li><a class="dropdown-item" href="ouvidoria.html">Ouvidoria</a></li>
+                  <li><a class="dropdown-item" href="chatbot.html">Kat</a></li>
+                <li><a class="dropdown-item" href="guia.html">Guia</a></li>
+                <li><a class="dropdown-item" href="equipe.html">Equipe</a></li>
+                <li><a class="dropdown-item" href="termos.html">Termos de uso</a></li>
+                </ul>
+          <div class="img-nav"> <a class="navbar-brand" href="index.html"><img src="img/logo-white.png" class="katzeinsight-img"></a> </div>
+          <div class="img-nav"> <a class="navbar-brand" href="login.html"><img src="img/user.png" id="img-user"></a></div>
+            <a class="nav-link" href="#" id="nav-login">Login</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="navtxt" aria-current="page" href="#"></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" id="navtxt" aria-current="page" href="#"></a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search" id="search-form">
+              <input class="form-control me-2" type="search" placeholder="Digite aqui" aria-label="Search" id="search-input">
+              <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+    <div class="main">
+        <div id="c2" class="card">
+           <div class="card-info">
+               <div class="contact-title">Contato</div>
+                   <div class="card-contact">
+                       <li class="icon-contact">
+                       </li>
+                       <li class="icon-contact">
+                               Email: anonimo@gmail.com
+                       </li>            
+                   </div>
+               </div>
+           </div>
+
+       <div id="c3" class="card">
+           <div class="card-info">
+               <li class="address-icon">
+                   <svg viewBox="0 0 576 512" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M575.8 255.5c0 18-15 32.1-32 32.1h-32l.7 160.2c0 2.7-.2 5.4-.5 8.1V472c0 22.1-17.9 40-40 40H456c-1.1 0-2.2 0-3.3-.1c-1.4 .1-2.8 .1-4.2 .1H416 392c-22.1 0-40-17.9-40-40V448 384c0-17.7-14.3-32-32-32H256c-17.7 0-32 14.3-32 32v64 24c0 22.1-17.9 40-40 40H160 128.1c-1.5 0-3-.1-4.5-.2c-1.2 .1-2.4 .2-3.6 .2H104c-22.1 0-40-17.9-40-40V360c0-.9 0-1.9 .1-2.8V287.6H32c-18 0-32-14-32-32.1c0-9 3-17 10-24L266.4 8c7-7 15-8 22-8s15 2 21 7L564.8 231.5c8 7 12 15 11 24z"></path>
+                   </svg>
+               </li>
+               <li class="address-title">Bairro:</li>
+               <li class="address">Centro</li>
+         </div>
+       </div>
+
+       <div id="c1" class="card">
+            <div class="card-info">
+               <div class="card-avatar">
+                    <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                       <path d="M304 128a80 80 0 1 0 -160 0 80 80 0 1 0 160 0zM96 128a128 128 0 1 1 256 0A128 128 0 1 1 96 128zM49.3 464H398.7c-8.9-63.3-63.3-112-129-112H178.3c-65.7 0-120.1 48.7-129 112zM0 482.3C0 383.8 79.8 304 178.3 304h91.4C368.2 304 448 383.8 448 482.3c0 16.4-13.3 29.7-29.7 29.7H29.7C13.3 512 0 498.7 0 482.3z"></path>
+                   </svg>
+               </div>
+               <div class="card-title">Anônimo</div>
+               <div class="card-subtitle">Morador</div>
+               <div class="card-social">
+               </div>
+           </div>
+       </div>
+   </div>
+  <br>
+  <br>
+  <br>
+  <br>
+ 
+  <div class="container-alterar">
+    <h3 class="alterar">Alterar Detalhes</h3>
+    <form id="form-detalhes">
+        <div class="mb-3">
+            <label for="nome" class="txt-alterar">Nome:</label>
+            <input type="text" class="form-control" id="nome" placeholder="Nome">
+        </div>
+        <div class="mb-3">
+            <label for="bairro" class="txt-alterar">Bairro:</label>
+            <input type="text" class="form-control" id="bairro" placeholder="Bairro">
+        </div>
+        <div class="mb-3">
+            <label for="email" class="txt-alterar">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="Email">
+        </div>
+        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        <button type="button" id="logout-btn" class="btn btn-danger">Logout</button> <!-- Botão de logout -->
+        <div id="logout-message" style="display: none; color: red; margin-top: 10px;"></div> <!-- Div para a mensagem de logout -->
+    </form>
+</div>
+</div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <script>
+           document.addEventListener("DOMContentLoaded", function() {
+            const form = document.getElementById("form-detalhes");
+            const nomeInput = document.getElementById("nome");
+            const bairroInput = document.getElementById("bairro");
+            const emailInput = document.getElementById("email");
+            const nomeCard = document.querySelector(".card-title");
+            const bairroCard = document.querySelector(".address");
+
+            nomeInput.value = nomeCard.textContent.trim();
+            bairroInput.value = bairroCard.textContent.trim();
+            emailInput.value = "anonimo@gmail.com"; // Definindo email padrão
+
+            form.addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                nomeCard.textContent = nomeInput.value;
+                bairroCard.textContent = bairroInput.value;
+                // Atualizando o email no cartão
+                const email = emailInput.value !== "" ? emailInput.value : "anonimo@gmail.com";
+                document.querySelector(".card-contact li:nth-child(2)").textContent = "Email: " + email;
+            });
+
+            const logoutBtn = document.getElementById("logout-btn");
+            const logoutMessage = document.getElementById("logout-message");
+
+            logoutBtn.addEventListener("click", function() {
+                nomeInput.value = "";
+                bairroInput.value = "";
+                nomeCard.textContent = "Anônimo";
+                bairroCard.textContent = "";
+                emailInput.value = "anonimo@gmail.com";
+                // Exibindo a mensagem de logout
+                logoutMessage.textContent = "Você foi desconectado!";
+                logoutMessage.style.display = "block";
+                // Definindo um tempo para a mensagem desaparecer
+                setTimeout(function() {
+                    logoutMessage.style.display = "none";
+                }, 3000); // 3 segundos
+            });
+        });
+</script>
+
+<style>
+.main {
+position: absolute;
+  width: 190px;
+  height: 254px;
+margin-left: 600px;
+margin-top: -90px;
+}
+
+.container-alterar{
+    width: 600px;
+    margin-top: 300px;
+    position: absolute;
+    margin-left: 400px;
+}
+
+.txt-alterar{
+    color: white;
+    font-size: 20px;
+}
+
+.alterar{
+    color: white;
+}
+
+.card {
+  width: 190px;
+  height: 254px;
+  background: #FAF1F6;
+  padding: 2rem 1.5rem;
+  transition: box-shadow .3s ease, transform .2s ease;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-avatar {
+  background: radial-gradient(#A8A6B6,#B3B1BF,#BDBBC7,#C5C4CE,#E2E2E7);
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  transition: transform .2s ease;
+}
+
+.card-avatar svg {
+  padding-top: 5px;
+  height: 80px;
+  width: 100px;
+  fill: #515F65;
+}
+
+.card-social {
+  display: flex;
+  justify-content: space-around;
+  width: 190px;
+  margin-top: 10%;
+  text-align: center;
+}
+
+.card-social-icon {
+  list-style: none;
+  color: #515F65;
+  font-size: 0.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-social-icon svg {
+  display: block;
+  height: 20px;
+  width: 20px;
+  fill: #515F65;
+  cursor: pointer;
+}
+
+.card-title {
+  color: #1b1b1b;
+  font-size: 1.5em;
+  font-weight: 600;
+  line-height: 2rem;
+  margin-top: 5px;
+}
+
+.card-subtitle {
+  color: #7e93a0;
+  font-size: 1.0em;
+}
+
+.address-icon {
+  fill: #515F65;
+  height: 150px;
+  width: 100px;
+  list-style: none;
+  justify-content: space-around;
+}
+
+.address-title {
+  color: #333;
+  font-size: 1.0em;
+  font-weight: 600;
+  list-style: none;
+}
+
+.address {
+  color: #859ba8;
+  font-size: 0.8em;
+  list-style: none;
+  padding-left: 20px;
+  ;
+}
+
+.contact-title {
+  color: #333;
+  font-size: 1.5em;
+  font-weight: 600;
+  margin-top: 45%;
+  padding-bottom: 5px;
+}
+
+.card-contact {
+  color: #859ba8;
+  font-size: 0.8em;
+}
+
+.icon-contact {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.icon-contact svg {
+  display: block;
+  height: 18px;
+  width: 18px;
+  fill: #515F65;
+  padding-right: 5px;
+}
+
+.card:hover {
+  box-shadow: 0 10px 50px #23232333;
+}
+
+.card:hover .card-info {
+  transform: translateY(-5%);
+}
+
+.card-avatar:hover {
+  transform: scale(1.1);
+}
+
+#cs1:hover {
+  transform: scale(2.0);
+}
+
+#cs2:hover {
+  transform: scale(2.0);
+}
+
+#cs3:hover {
+  transform: scale(2.0);
+}
+
+.main:hover #c1 {
+  transform: translateX(0px);
+}
+
+.main:hover #c2 {
+  transform: translateX(200px);
+}
+
+.main:hover #c3 {
+  transform: translateX(-200px);
+}
+</style>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+<footer class="footer-equipe">
+    <img src="img/logo-footer.png" class="logo-equipe" alt="Logo da Equipe">
+    <br>
+    <br>
+    <a href="https://mongagua.sp.gov.br/"><button>Prefeitura de Mongaguá</button></a>
+    <br>
+    <br>
+   <center><a href="https://www.instagram.com/prefeiturademongagua?igsh=dGdhNHA5OWI3OTMy"><button class="insta">
+      <svg viewBox="0 0 16 16" class="bi bi-instagram" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg"> <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"></path> </svg>
+        <span>Instragram</span>
+    </button> 
+  </a>
+  </center>   
+</footer>
+<!-- https://mongagua.sp.gov.br/ -->
+    <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</body>
+</html>

@@ -1,0 +1,8 @@
+.titulo-cadastro {
+    text-align: center; /* Centraliza o texto */
+    font-size: 2rem; /* Tamanho da fonte */
+    margin-top: 50px; /* Espaçamento superior */
+    margin-bottom: 30px; /* Espaçamento inferior */
+    font-family: 'Roboto', sans-serif; /* Fonte Roboto */
+    color: #ffffff; /* Cor do texto */
+}
